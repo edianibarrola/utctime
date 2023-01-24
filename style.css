@@ -1,0 +1,20 @@
+#utc-clock, #timezone-clock {
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+#utc-clock {
+    background-color: #f0f0f0;
+}
+#timezone-clock {
+    background-color: #e0e0e0;
+}
+
+#utc-clock:hover, #timezone-clock:hover {
+    transform: scale(1.1);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
+}
