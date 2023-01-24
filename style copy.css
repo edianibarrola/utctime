@@ -1,77 +1,40 @@
-/* Styles for the clock container */
-
-
-#utc-clock, #timezone-clock {
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 1rem;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
-}
-#utc-clock {
-    background-color: #f0f0f0;
-}
-#timezone-clock {
-    background-color: #e0e0e0;
-}
-
-#utc-clock:hover, #timezone-clock:hover {
-    transform: scale(1.1);
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.3);
-}
-/* Styles for the UTC clock graphic */
-
 /* Styles for the UTC clock graphic */
 #utc-clock-graphic {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #1e90ff, #00008b);
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
-    position: relative;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styles for the timezone clock graphic */
 #timezone-clock-graphic {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #ffa500, #ff8c00);
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
-    position: relative;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 /* Styles for the clock container */
 .clock-container {
     width: 200px;
     height: 200px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styles for the clock face */
 .clock-face {
     width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     border-radius: 50%;
     background: linear-gradient(to bottom, #1e90ff, #00008b);
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
+
 /* Styles for the clock hands */
 .hand {
     width: 50%;
@@ -80,7 +43,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform-origin: 50% 50%;
+    transform-origin: 50% 100%;
     transform: rotate(90deg);
     transition: all 0.05s;
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
